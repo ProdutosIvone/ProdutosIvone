@@ -1,0 +1,533 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,100&display=swap');
+
+body{
+    background-color: rgb(245, 151, 195);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    text-decoration: none;
+    list-style: none;
+}
+
+nav{
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background-color: #01282e;
+    align-items: center;
+    justify-content: center;
+    padding: 0 50px 0 100px;
+    flex-wrap: wrap;
+    
+}
+
+.logo{
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+    margin-right: 200px;
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+nav ul li{
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover{
+    background: rgb(255, 0, 140);
+}
+
+nav .menu-btn i{
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+.sociais button{
+    width: 35px;
+    height: 35px;
+    background-color: rgb(241, 241, 241);
+    border: 2px solid white;
+    margin-right: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sociais button:hover{
+    background-color: rgb(255, 255, 255);
+    transform: scaleY(1.2);
+}
+
+.sociais button i{
+    font-size: 20px;
+    color: rgb(245, 151, 195);
+}
+
+@media (max-width: 920px) {
+    nav .menu-btn i {
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background-color: #003840;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        display: block;
+        transition: all 0.3s ease;
+    }
+    nav ul.open{
+        left: 0;
+    }
+    nav ul li{
+        width: 100%;
+        margin: 50px 0;
+    }
+    nav ul li a {
+        font-size: 23px;
+    }
+    nav ul li a.active,
+    nav ul li a:hover{
+        background: none;
+        color: #000000;
+    }   
+}
+
+#area-lateral {
+	width: 359px;
+	float: left;
+    padding: 1px;
+	
+}
+
+.conteudo-lateral {
+	background: rgb(255, 0, 140);
+	margin-bottom: 20px;
+}
+
+h3{
+    color: white;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    height: auto;
+    font-size: 30px;
+}
+
+.postagem-lateral li a{
+    color: white;
+    font-size: 22px;
+    padding: 2px;
+}
+
+.postagem-lateral, a:link a:visited{
+    padding: 4px;
+    
+}
+
+.postagem-lateral a:hover{
+    background: rgb(245, 151, 195);
+    border-radius: 8px;
+}
+
+.postagem-lateral{
+    
+    height: 950px;
+
+}
+
+section h1{
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+    border: 4px solid white;
+    background-color: #f5d8cf;
+    padding: 5px;
+    
+
+    
+}
+
+
+.container-produtos{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.base img{
+    height: auto;
+    width: 390px;
+    transition: 0.35s ease;
+    padding: 10px;
+
+}
+
+.corretivo img{
+    height: auto;
+    width: 390px;
+    transition: 0.35s ease;
+    padding: 10px;
+}
+
+.poboca img{
+    height: auto;
+    width: 390px;
+    transition: 0.35s ease;
+    padding: 10px;
+}
+
+.base img:hover{
+    transform: scale(0.9) translateY(5px);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.corretivo img:hover{
+    transform: scale(0.9) translateY(5px);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.poboca img:hover{
+    transform: scale(0.9) translateY(5px);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.base{
+    background-color: rgb(245, 151, 195);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.corretivo{
+    background-color: rgb(245, 151, 195);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.poboca{
+    background-color: rgb(245, 151, 195);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.base h5{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(30, 19, 19);
+}
+
+.corretivo h5{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(30, 19, 19);
+   
+}
+
+.poboca h5{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(30, 19, 19);
+    
+   
+}
+
+.base button{
+    width: 25px;
+    height: 25px;
+    background-color: rgb(245, 151, 195);
+    border: 2px solid rgb(245, 151, 195);
+    margin-right: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.base button:hover{
+    background-color: transparent;
+    transform: scaleY(1.2);
+}
+
+.base button i{
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+}
+
+.corretivo button{
+    width: 25px;
+    height: 25px;
+    background-color: rgb(245, 151, 195);
+    border: 2px solid rgb(245, 151, 195);
+    margin-right: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.corretivo button:hover{
+    background-color: transparent;
+    transform: scaleY(1.2);
+}
+
+.corretivo button i{
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+}
+
+.poboca button{
+    width: 25px;
+    height: 25px;
+    background-color: rgb(245, 151, 195);
+    border: 2px solid rgb(245, 151, 195);
+    margin-right: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.poboca button:hover{
+    background-color: transparent;
+    transform: scaleY(1.2);
+}
+
+.poboca button i{
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+}
+
+/******Container ******/
+
+.container-produtos2{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.blush img{
+    height: auto;
+    width: 390px;
+    transition: 0.35s ease;
+    padding: 10px;
+
+}
+
+.contorno img{
+    height: auto;
+    width: 390px;
+    transition: 0.35s ease;
+    padding: 10px;
+}
+
+.primer img{
+    height: auto;
+    width: 390px;
+    transition: 0.35s ease;
+    padding: 10px;
+}
+
+.blush img:hover{
+    transform: scale(0.9) translateY(5px);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contorno img:hover{
+    transform: scale(0.9) translateY(5px);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.primer img:hover{
+    transform: scale(0.9) translateY(5px);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.blush{
+    background-color: rgb(245, 151, 195);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.contorno{
+    background-color: rgb(245, 151, 195);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.primer{
+    background-color: rgb(245, 151, 195);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.blush h5{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(30, 19, 19);
+}
+
+.contorno h5{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(30, 19, 19);
+   
+}
+
+.primer h5{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(30, 19, 19);
+    
+   
+}
+
+.blush button{
+    width: 25px;
+    height: 25px;
+    background-color: rgb(245, 151, 195);
+    border: 2px solid rgb(245, 151, 195);
+    margin-right: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.blush button:hover{
+    background-color: transparent;
+    transform: scaleY(1.2);
+}
+
+.blush button i{
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+}
+
+.contorno button{
+    width: 25px;
+    height: 25px;
+    background-color: rgb(245, 151, 195);
+    border: 2px solid rgb(245, 151, 195);
+    margin-right: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contorno button:hover{
+    background-color: transparent;
+    transform: scaleY(1.2);
+}
+
+.contorno button i{
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+}
+
+.primer button{
+    width: 25px;
+    height: 25px;
+    background-color: rgb(245, 151, 195);
+    border: 2px solid rgb(245, 151, 195);
+    margin-right: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.primer button:hover{
+    background-color: transparent;
+    transform: scaleY(1.2);
+}
+
+.primer button i{
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+}
+
+.center{
+    display: flex;
+    gap: 5rem;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.rodape{
+    padding: 10px;
+    background-color: rgb(57, 37, 37);
+
+}
+
+.duvidas{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.conta{
+    color: rgb(255, 248, 248);
+    font-weight: bold;
+}
+
+.atendimento{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.duvidas a{
+    color: white;
+    font-size: 12px; 
+}
+
+.conta a{
+    color: white;
+    font-size: 12px; 
+}
+
+.atendimento a{
+    color: white;
+    font-size: 12px; 
+}
+
+.last-text{
+    text-align: center;
+    background-color: rgb(57, 37, 37);
+    color: #fff;
+    padding: 5px;
+}
